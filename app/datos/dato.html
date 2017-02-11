@@ -1,0 +1,26 @@
+<ul class="x-navigation">
+	<li>
+		<h2> Datos Personales de Paciente</h2>
+	</li>
+
+<form [formGroup]="formularioMovimiento">  
+  <label>Tipo:</label>
+  <input type="text" formControlName="tipo">
+  <p></p>
+  <label>Categoría:</label>
+  <input type="text" formControlName="categoria"><p></p>
+
+  <label>Fecha:</label>
+  <input type="date" formControlName="fecha"><p></p>
+
+  <label>Importe:</label>
+  <input type="number" formControlName="importe"> <p>
+  </p>
+
+  <button 
+    type="submit" 
+    [disabled]="!formularioMovimiento.valid"
+    (click)="guardarMovimiento()" >Guardar
+  </button>
+</form>
+</ul> 

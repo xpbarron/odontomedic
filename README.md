@@ -1,2 +1,9 @@
-# odontomedic
-API para clinica dental
+# angular-seed
+
+```
+$ npm install
+
+$ typings install
+
+$ npm start
+```
